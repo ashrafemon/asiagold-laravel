@@ -1,0 +1,154 @@
+.arrow::after {
+    content: '\21E8';
+    width: 20px;
+    height: 20px;
+    font-size: 3rem;
+    position: absolute;
+    top: 20%;
+    right: 0;
+}
+
+@media(max-width: 991px) {
+    .arrow {
+        margin-bottom: 35px;
+    }
+
+    .arrow::after {
+        content: '\21D3';
+        width: 20px;
+        height: 20px;
+        font-size: 3rem;
+        position: absolute;
+        top: 100%;
+        transform: translate(-50%, -100%);
+        left: 50%;
+        -webkit-transform: translate(-50%, -100%);
+        -moz-transform: translate(-50%, -100%);
+        -ms-transform: translate(-50%, -100%);
+        -o-transform: translate(-50%, -100%);
+
+    }
+}
+
+#cardSkeleton {
+    width: 100%;
+    height: 250px;
+    background: rgb(43, 64, 147);
+     background: linear-gradient(180deg, rgba(43, 64, 147, 1) 0%, rgba(39, 144, 204, 1) 100%); 
+    /*background: linear-gradient(135deg, #45484d 0%,#000000 100%);*/
+    box-sizing: border-box;
+    border-radius: 15px;
+    color: white;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#cardContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#credit_id{
+    font-family: 'Cutive Mono';
+    letter-spacing: 5px;
+}
+
+.card_type{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #1e1e2d;
+    border-radius: 10px;
+}
+
+
+.btn-gold {
+    color: #fff;
+    background-color: #e3c259;
+    border-color: #e3c259;
+}
+
+.btn-gold:hover {
+    color: #fff;
+    background-color: #ae871e;
+    border-color: #c4a139;
+}
+
+.btn-gold:focus,
+.btn-gold.focus {
+    color: #fff;
+    background-color: #ae871e;
+    border-color: #c4a139;
+    box-shadow: 0 0 0 0.2rem rgba(247, 213, 24, 0.678);
+}
+
+#loginSec, #registerSec{
+    width: 100%;
+    height: 500px;
+}
+
+
+.kt-aside__brand{
+    background-color: #ffffff;
+}
+
+.kt-header-mobile__logo{
+    background-color: #ffffff;
+    padding: 0 5px;
+}
+
+.rounded-15{
+    border-radius: 15px;
+}
+
+.custom-text-light{
+    color: #9a9ab5;
+}
+
+.historyItemContainer,.chargeItemContainer, .messageItemContainer{
+    height: 450px; 
+    overflow: scroll;
+}
+
+.historyItemContainer .his-item{
+    border-bottom: 1px solid #eaebe4;
+}
+
+.historyItemContainer .his-item:last-child{
+    border-bottom: 0;
+}
+
+#profileTab .active{
+    font-weight: 500;
+    padding-bottom: 4px !important;
+    border-bottom: 3px solid #1dc9b7;
+}
+
+
+#cartTab a{
+    font-size: 16px;
+    color: ##62cff4;
+    background-color: #99a2ca;
+    font-weight: bold;
+    border-radius: 0;
+    border: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#cartTab .active{
+    color: #fff;
+    background-color: #3148b0;
+}
